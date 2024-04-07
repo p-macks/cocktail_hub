@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Hub</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h2>COCKTAIL GUIDE</h2>
+    </div>
+    <div class="container">
+        <div class="left-side">
+            <img src="<%= object.image %>" alt="">
+            <h4><%= object.name %></h4>
+        </div>
+        <div class="right">
+            <h5>Ingredients:</h5>
+            <p id="ingredients"><%= object.ingredients %></p><hr>
+            <h5>Preparation:</h5>
+            <p id="Preparation">
+                <%= object.preparation %>
+            </p>
+            <hr>
+        </div>
+    
+    </div>
+    <div class="footer">
+        <form action="/next" method="post">
+            <button type="submit">Next</button>
+        </form>
+    </div>
+</body>
+
+</html>
